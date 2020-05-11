@@ -1,0 +1,27 @@
+{
+    "name": "aping/laravel-alarm",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aping",
+            "email": "czp010443@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "bingher/ding-bot": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aping\\LaravelAlarm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aping\\LaravelAlarm\\AlarmServiceProvider"
+            ]
+        }
+    }
+}
