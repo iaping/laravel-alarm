@@ -26,7 +26,7 @@ return [
      * DingTalk setting
      */
     'dingtalk' => [
-        'webhook' => 'https://oapi.dingtalk.com/robot/send?access_token=e4c2827ce067c352010e2cb199e5301ead946677d0f3988517c092d52155fc55',
+        'webhook' => env('ALARM_DING_HOOK', ''),
     ],
 
 ];
