@@ -33,23 +33,22 @@ Add Service Provider to config/app.php in providers section
 Aping\LaravelAlarm\AlarmServiceProvider::class,
 ```
 
-publish config
+Publish config
 
 ```php
-php artisan vendor:publish --provider="Aping\LaravelAlarm\AlarmServiceProv
-ider"
+php artisan vendor:publish --provider="Aping\LaravelAlarm\AlarmServiceProvider"
 ```
 
-start the queue:
+Start the queue:
 ```php
 php artisan queue:work --queue=laravel-alarm
 ```
 
-finished
+Finished
 
-### Custom Event Alarm
+## Custom Event Alarm
 
-in config/alarm.php 
+In config/alarm.php 
 
 ```php
 'events' => [
