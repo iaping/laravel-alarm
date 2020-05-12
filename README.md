@@ -1,6 +1,6 @@
 ## Laravel Alarm
 
-![Screenshot](screenshot20200512.jpg)
+![Screenshot](screenshot20200511.jpg)
 
 laravel alarm for exception or anything（异常报警或自定义报警通知）
 
@@ -10,6 +10,7 @@ laravel alarm for exception or anything（异常报警或自定义报警通知�
 - [ ] Mail（邮件通知）
 - [ ] Rate Limit（限频）
 - [ ] Local（多语言）
+- [ ] Tests
 
 ## Install
 
