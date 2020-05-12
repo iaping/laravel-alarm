@@ -9,8 +9,6 @@ use Illuminate\Queue\Events\JobFailed;
 
 class AlarmListener
 {
-    protected $queueName = 'laravel-alarm';
-
     /**
      * Handle the event.
      *
@@ -24,8 +22,9 @@ class AlarmListener
             return;
         }
 
+        $queue = config('alarm.queue', 'laravel-alarm');
         foreach ($alarms as $alarm) {
-            AlarmJob::dispatch(new $alarm($event))->onQueue($this->queueName);
+            AlarmJob::dispatch(new $alarm($event))->onQueue($queue);
         }
     }
 

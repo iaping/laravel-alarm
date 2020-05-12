@@ -2,6 +2,7 @@
 
 namespace Aping\LaravelAlarm\Jobs;
 
+use Exception;
 use Aping\LaravelAlarm\Alarms\Alarm;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\InteractsWithQueue;
@@ -34,7 +35,11 @@ class AlarmJob implements ShouldQueue
      */
     public function handle()
     {
-        $this->alarm->send();
+        try {
+            $this->alarm->send();
+        } catch (Exception $e) {
+            //TODO
+        }
     }
     
 }

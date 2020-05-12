@@ -8,6 +8,11 @@ return [
     'env' => env('ALARM_ENV', 'production'),
 
     /**
+     * 队列
+     */
+    'queue' => env('ALARM_QUEUE', 'laravel-alarm'),
+
+    /**
      * 报警事件
      */
     'events' => [
