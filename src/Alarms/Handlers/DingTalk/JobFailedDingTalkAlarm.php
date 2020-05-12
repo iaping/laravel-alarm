@@ -12,7 +12,7 @@ class JobFailedDingTalkAlarm extends DingTalkAlarm
     protected function build()
     {
         return sprintf("**系统队列报警**\n\n---\n\n队列: %s\n\n任务: %s\n\n发生时间: %s\n\n错误信息:\n\n> %s",
-            $this->event->connectionName,
+            $this->connectionName,
             $this->job,
             $this->eventTime,
             $this->message);
