@@ -6,10 +6,10 @@ laravel alarm for exception or anything（异常报警或自定义报警通知�
 
 ## Todo
 
-- [x] DingTalk Robot（钉钉机器人通知）
+- [x] ~~DingTalk Robot（钉钉机器人通知）~~
 - [ ] Mail（邮件通知）
 - [ ] Rate Limit（限频）
-- [x] Locale（多语言）
+- [x] ~~Locale（多语言）~~
 - [ ] Tests
 
 ## Install
@@ -66,7 +66,7 @@ In config/alarm.php
 ],
 ```
 The implemented（已实现的报警接口）
-+ Aping\LaravelAlarm\Alarms\DingTalkAlarm
++ `Aping\LaravelAlarm\Alarms\DingTalkAlarm`
 
 
 ## Screenshot
