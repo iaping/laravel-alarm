@@ -1,6 +1,6 @@
 ## Laravel Alarm
 
-![Screenshot](screenshot20200511.jpg)
+![Screenshot](architecture.png)
 
 laravel alarm for exception or anything（异常报警或自定义报警通知）
 
@@ -68,6 +68,10 @@ In config/alarm.php
 The implemented（已实现的报警接口）
 + Aping\LaravelAlarm\Alarms\DingTalkAlarm
 
+
+## Screenshot
+
+![Screenshot](screenshot20200511.jpg)
 
 ## Last
 
