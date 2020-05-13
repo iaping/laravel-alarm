@@ -1,6 +1,6 @@
 ## Laravel Alarm
 
-![Screenshot](architecture.png)
+![Architecture](architecture.png)
 
 laravel alarm for exception or anything（异常报警或自定义报警通知）
 
