@@ -9,7 +9,7 @@ laravel alarm for exception or anything（异常报警或自定义报警通知�
 - [x] DingTalk Robot（钉钉机器人通知）
 - [ ] Mail（邮件通知）
 - [ ] Rate Limit（限频）
-- [ ] Local（多语言）
+- [x] Locale（多语言）
 - [ ] Tests
 
 ## Install

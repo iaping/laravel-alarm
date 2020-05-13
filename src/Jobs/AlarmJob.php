@@ -14,6 +14,20 @@ class AlarmJob implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable;
 
     /**
+     * max tries
+     *
+     * @var int
+     */
+    public $tries = 3;
+
+    /**
+     * timeout
+     *
+     * @var int
+     */
+    public $timeout = 180;
+
+    /**
      * @var Alarm
      */
     public $alarm;
