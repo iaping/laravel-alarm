@@ -14,10 +14,14 @@ class AlarmServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([$this->configPath() => config_path('alarm.php')]);
+        $this->publishes([
+            $this->configPath() => config_path('alarm.php'),
+            $this->translationsPath() => resource_path('vendor/laravel-alarm/lang'),
+        ]);
 
         $this->mergeConfigFrom($this->configPath(), 'alarm');
-
+        $this->loadTranslationsFrom($this->translationsPath(), 'alarm');
+        
         if (! $this->app->environment(config('alarm.env'))) {
             return;
         }
@@ -48,6 +52,16 @@ class AlarmServiceProvider extends ServiceProvider
     protected function configPath()
     {
         return __DIR__ . '/../config/alarm.php';
+    }
+
+    /**
+     * translations path
+     *
+     * @return string
+     */
+    protected function translationsPath()
+    {
+        return __DIR__ . '/../lang';
     }
 
 }

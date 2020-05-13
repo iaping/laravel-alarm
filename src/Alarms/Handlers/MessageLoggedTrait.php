@@ -39,7 +39,7 @@ trait MessageLoggedTrait
      */
     public function title()
     {
-        return '系统日志报警';
+        return trans('alarm::alarm.message_logged_dingtalk_title');
     }
 
 }

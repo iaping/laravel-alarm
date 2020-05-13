@@ -11,9 +11,13 @@ class MessageLoggedAlarm extends DingTalkAlarm
 
     protected function build()
     {
-        return sprintf("**系统日志报警**\n\n---\n\n日志级别: %s\n\n发生时间: %s\n\n错误信息:\n\n> %s",
+        return sprintf("**%s**\n\n---\n\n%s: %s\n\n%s: %s\n\n%s:\n\n> %s",
+            trans('alarm::alarm.message_logged_dingtalk_title'),
+            trans('alarm::alarm.message_logged_level'),
             $this->level,
+            trans('alarm::alarm.exception_time'),
             $this->eventTime,
+            trans('alarm::alarm.exception_message'),
             $this->message);
     }
 
