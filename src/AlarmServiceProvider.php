@@ -24,7 +24,7 @@ class AlarmServiceProvider extends ServiceProvider
         $this->publishes([
             $this->translationsPath() => resource_path('lang/vendor/laravel-alarm'),
         ], 'resources');
-
+      
         if (! $this->app->environment(config('alarm.env'))) {
             return;
         }
