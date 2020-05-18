@@ -19,7 +19,8 @@ return [
      * DingTalk setting
      */
     'dingtalk' => [
-        'webhook' => env('ALARM_DING_HOOK', ''),
+        'token' => env('ALARM_DING_TOKEN', ''),
+        'key' => env('ALARM_DING_KEY', ''),
     ],
 
     /**

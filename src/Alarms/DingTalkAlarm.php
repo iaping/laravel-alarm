@@ -2,15 +2,15 @@
 
 namespace Aping\LaravelAlarm\Alarms;
 
-use bingher\ding\DingBot;
+use Aping\PddingRobot\Fast;
 
 abstract class DingTalkAlarm implements Alarm
 {
     public function send()
     {
-        $ding = new DingBot(config('alarm.dingtalk'));
+        $robot = Fast::new(config('alarm.dingtalk.token'), config('alarm.dingtalk.key'));
 
-        $ding->markdown($this->title(), $this->build());
+        $robot->sendMarkdown($this->title(), $this->build());
     }
 
     /**

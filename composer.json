@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "bingher/ding-bot": "1.*"
+        "aping/pdding-robot": "1.*"
     },
     "autoload": {
         "psr-4": {
