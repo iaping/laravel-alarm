@@ -70,9 +70,9 @@ The implemented（已实现的报警接口）
 
 ## Tips
 
-DingTalk have to set the keyword (e.g Exception)
+DingTalk security mode suggests using signatures.
 
-钉钉机器人需要设置关键字，否则收不到消息（如：异常）
+钉钉机器人安全模式建议用签名（最好不要用关键字）
 
 ## Screenshot
 
