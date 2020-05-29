@@ -9,6 +9,9 @@ class MessageLoggedAlarm extends DingTalkAlarm
 {
     use MessageLoggedTrait;
 
+    /**
+     * @return string
+     */
     protected function build()
     {
         return sprintf("**%s**\n\n---\n\n%s: %s\n\n%s: %s\n\n%s:\n\n> %s",
@@ -19,6 +22,14 @@ class MessageLoggedAlarm extends DingTalkAlarm
             $this->eventTime,
             trans('alarm::alarm.exception_message'),
             $this->message);
+    }
+
+    /**
+     * @return string
+     */
+    public function title()
+    {
+        return trans('alarm::alarm.message_logged_dingtalk_title');
     }
 
 }

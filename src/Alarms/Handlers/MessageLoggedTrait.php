@@ -34,12 +34,4 @@ trait MessageLoggedTrait
         $this->eventTime = Carbon::now();
     }
 
-    /**
-     * @return string
-     */
-    public function title()
-    {
-        return trans('alarm::alarm.message_logged_dingtalk_title');
-    }
-
 }
